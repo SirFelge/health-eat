@@ -8,13 +8,15 @@ import { MainMenuPageRoutingModule } from './main-menu-routing.module';
 
 import { MainMenuPage } from './main-menu.page';
 
+import { HeaderComponent } from '../components/header/header.component';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MainMenuPageRoutingModule
+    MainMenuPageRoutingModule,
   ],
-  declarations: [MainMenuPage]
+    declarations: [MainMenuPage, HeaderComponent]
 })
 export class MainMenuPageModule {}
