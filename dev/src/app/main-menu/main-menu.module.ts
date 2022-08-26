@@ -9,6 +9,7 @@ import { MainMenuPageRoutingModule } from './main-menu-routing.module';
 import { MainMenuPage } from './main-menu.page';
 
 import { HeaderComponent } from '../components/header/header.component';
+import { CategoryItemComponent } from '../components/category-item/category-item.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { HeaderComponent } from '../components/header/header.component';
     IonicModule,
     MainMenuPageRoutingModule,
   ],
-    declarations: [MainMenuPage, HeaderComponent]
+    declarations: [MainMenuPage, HeaderComponent, CategoryItemComponent]
 })
 export class MainMenuPageModule {}
