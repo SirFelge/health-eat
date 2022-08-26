@@ -5,7 +5,11 @@ const routes: Routes = [
   {
     path: 'main-menu',
     loadChildren: () => import('./main-menu/main-menu.module').then( m => m.MainMenuPageModule)
+  },  {
+    path: 'header',
+    loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
   }
+
 
 ];
 @NgModule({
