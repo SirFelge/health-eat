@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Fruits",
+    "iconPath": "./assets/img/fruit3.png",
+    "values": [
+      {
+        "name": "Pear",
+        "healthy": 70,
+        "energy": 40,
+        "macros": 35
+      },
+      {
+        "name": "Pineapple",
+        "healthy": 85,
+        "energy": 45,
+        "macros": 25
+      },
+      {
+        "name": "Banana",
+        "healthy": 80,
+        "energy": 75,
+        "macros": 40
+      },
+      {
+        "name": "Mango",
+        "healthy": 85,
+        "energy": 45,
+        "macros": 35
+      },
+      {
+        "name": "Orange",
+        "healthy": 85,
+        "energy": 45,
+        "macros": 30
+      }
+    ]
+  },
+  {
+    "name": "Vegetables",
+    "iconPath": "./assets/img/vegetables.png",
+    "values": [
+      {
+        "name": "Salad",
+        "healthy": 80,
+        "energy": 35,
+        "macros": 25
+      },
+      {
+        "name": "Cucumber",
+        "healthy": 90,
+        "energy": 20,
+        "macros": 25
+      },
+      {
+        "name": "Potato",
+        "healthy": 85,
+        "energy": 75,
+        "macros": 40
+      },
+      {
+        "name": "Carrot",
+        "healthy": 85,
+        "energy": 40,
+        "macros": 35
+      }
+    ]
+  },
+  {
+    "name" : "Dishes",
+    "iconPath": "./assets/img/dish.png",
+    "values": [
+      {
+        "name": "Pizza",
+        "healthy": 35,
+        "energy": 60,
+        "macros": 65
+      },
+      {
+        "name": "Burger",
+        "healthy": 45,
+        "energy": 75,
+        "macros": 70
+      },
+      {
+        "name": "Spaghetti Bolognese",
+        "healthy": 50,
+        "energy": 65,
+        "macros": 70
+      }
+    ]
+  }
+]
