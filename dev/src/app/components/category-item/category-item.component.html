@@ -1,3 +1,21 @@
-<p>
-  category-item works!
-</p>
+<ion-grid>
+
+  <ion-row>
+    <ion-col *ngFor="let category of inventory">
+      <div class="category-box">
+        <img class="category-icon" src="{{category.iconPath}}">
+        <p class="item-text">{{category.name}}</p>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row *ngIf="evenAmountOfCategories == false">
+    <ion-col>
+      <div class="category-box">
+        <img class="category-icon" src="">
+        <p class="item-text"></p>
+      </div>
+    </ion-col>
+  </ion-row>
+   
+</ion-grid>
