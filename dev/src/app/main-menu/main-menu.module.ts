@@ -8,8 +8,7 @@ import { MainMenuPageRoutingModule } from './main-menu-routing.module';
 
 import { MainMenuPage } from './main-menu.page';
 
-import { HeaderComponent } from '../components/header/header.component';
-import { CategoryItemComponent } from '../components/category-item/category-item.component';
+import { SharedModulePageModule } from '../shared-module/shared-module.module';
 
 @NgModule({
   imports: [
@@ -17,7 +16,10 @@ import { CategoryItemComponent } from '../components/category-item/category-item
     FormsModule,
     IonicModule,
     MainMenuPageRoutingModule,
+    SharedModulePageModule
   ],
-    declarations: [MainMenuPage, HeaderComponent, CategoryItemComponent]
+  declarations: [
+    MainMenuPage
+  ]
 })
 export class MainMenuPageModule {}
