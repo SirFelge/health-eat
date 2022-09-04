@@ -11,5 +11,4 @@ export class MainMenuPage implements OnInit {
 
   ngOnInit() {
   }
-
 }
