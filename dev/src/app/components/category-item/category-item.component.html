@@ -3,7 +3,7 @@
   <div>
     <ion-row>
       <ion-col size="6" *ngFor="let category of inventory">
-        <button class="category-box">
+        <button class="category-box" (click)="goToPage({{category.name}})">
           <img class="category-icon" src="{{category.iconPath}}">
           <p class="item-text">{{category.name}}</p>
         </button>
