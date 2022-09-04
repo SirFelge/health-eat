@@ -1,21 +1,24 @@
 <ion-grid>
 
-  <ion-row>
-    <ion-col *ngFor="let category of inventory">
-      <div class="category-box">
-        <img class="category-icon" src="{{category.iconPath}}">
-        <p class="item-text">{{category.name}}</p>
-      </div>
-    </ion-col>
-  </ion-row>
+  <div>
+    <ion-row>
+      <ion-col size="6" *ngFor="let category of inventory">
+        <button class="category-box">
+          <img class="category-icon" src="{{category.iconPath}}">
+          <p class="item-text">{{category.name}}</p>
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
 
-  <ion-row *ngIf="evenAmountOfCategories == false">
-    <ion-col>
-      <div class="category-box">
-        <img class="category-icon" src="">
-        <p class="item-text"></p>
-      </div>
-    </ion-col>
-  </ion-row>
-   
 </ion-grid>
+<!--
+      <ion-row *ngIf="evenAmountOfCategories == false">
+      <ion-col>
+        <div class="category-box">
+          <img class="category-icon" src="{{category.iconPath}}">
+          <p class="item-text">{{category.name}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+ -->
