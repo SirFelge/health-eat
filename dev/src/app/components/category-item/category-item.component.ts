@@ -28,6 +28,5 @@ export class CategoryItemComponent implements OnInit {
   ngOnInit() {
     this.inventory = inventory;
     this.evenAmountOfCategories = this.inventory.length % 2 == 0;
-    console.log(this.inventory);
   }
 }
