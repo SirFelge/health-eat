@@ -2,8 +2,8 @@
 
   <div>
     <ion-row>
-      <ion-col size="6" *ngFor="let category of inventory">
-        <button class="category-box" (click)="GoToPage({{category.name}})">
+      <ion-col size="6" *ngFor="let category of inventories">
+        <button class="category-box" (click)="GoToPage(category.name)">
           <img class="category-icon" src="{{category.iconPath}}">
           <p class="item-text">{{category.name}}</p>
         </button>
@@ -12,6 +12,7 @@
   </div>
 
 </ion-grid>
+
 <!--
       <ion-row *ngIf="evenAmountOfCategories == false">
       <ion-col>
@@ -21,4 +22,4 @@
         </div>
       </ion-col>
     </ion-row>
- -->
+-->

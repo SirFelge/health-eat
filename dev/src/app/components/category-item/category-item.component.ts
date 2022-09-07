@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import inventory from 'src/assets/json/inventory.json'
+import inventory from '../../../assets/json/inventory.json'
 import { Router } from '@angular/router';
 
 interface IValues {
@@ -10,7 +10,7 @@ interface IValues {
 }
 
 interface IInventory {
-  category: String,
+  name: String,
   iconPath: String,
   values: IValues[]
 }
@@ -28,21 +28,24 @@ export class CategoryItemComponent implements OnInit {
 
   ngOnInit() {
     this.inventories = inventory;
-    this.evenAmountOfCategories = this.inventories.length % 2 == 0;
+    this.evenAmountOfCategories = this.inventories.length % 2 == 0; //Need for styling purposes
   }
 
   GoToPage(category:string): void {
     var foods: IValues[] = this.GetFoodsFromCategory(category); 
+    console.log(foods);
     this.router.navigate(["food-list", {values: foods}]);
   }
 
   GetFoodsFromCategory(selectedCategory:string): IValues[] {
+    var foods : IValues[];
+
     this.inventories.forEach(inventory => {
-      if(inventory.category == selectedCategory){
-         return inventory.values;
-      } 
+      if(inventory.name == selectedCategory){
+        foods = inventory.values;
+      }
     });
-    
-    return null;
+
+    return foods;
   }
 }
