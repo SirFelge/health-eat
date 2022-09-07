@@ -33,7 +33,7 @@ export class CategoryItemComponent implements OnInit {
 
   GoToPage(category:string): void {
     var foods: IValues[] = this.GetFoodsFromCategory(category); 
-    this.router.navigate(["food-list"]);
+    this.router.navigate(["food-list", {values: foods}]);
   }
 
   GetFoodsFromCategory(selectedCategory:string): IValues[] {
