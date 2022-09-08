@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>food-details</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <app-header [title]="selectedFood.name"></app-header>
+  <ion-card>
+    <ion-card-header class="centerImage">
+      <img class="food-icon" src="{{selectedFood.iconPath}}">
+    </ion-card-header>
+  
+    <ion-card-content>
+      <div class="progressionBarWrapper">
+        <p style="width: 30%">Healthy</p>
+        <div class="progressionBar">
+          <div [ngStyle]="{'width': healthy}"></div>
+        </div>
+      </div>
+      <div class="progressionBarWrapper">
+        <p style="width: 30%">Energy</p>
+        <div class="progressionBar">
+          <div [ngStyle]="{'width': energy}"></div>
+        </div>
+      </div>
+      <div class="progressionBarWrapper">
+        <p style="width: 30%">Macro's</p>
+        <div class="progressionBar">
+          <div [ngStyle]="{'width': macros}"></div>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <app-nav-button page="food-list"></app-nav-button>
 </ion-content>
