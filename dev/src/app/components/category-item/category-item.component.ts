@@ -2,16 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import inventory from '../../../assets/json/inventory.json'
 import { Router } from '@angular/router';
 
-interface IValues {
-  name: String,
+export interface IValues {
+  name: string,
+  iconPath: string,
   healthy: number,
   energy: number,
   macros: number
 }
 
 interface IInventory {
-  name: String,
-  iconPath: String,
+  name: string,
+  iconPath: string,
   values: IValues[]
 }
 
@@ -32,13 +33,13 @@ export class CategoryItemComponent implements OnInit {
   }
 
   GoToPage(category:string): void {
-    var foods: IValues[] = this.GetFoodsFromCategory(category); 
-    console.log(foods);
-    this.router.navigate(["food-list", {values: foods}]);
+    let foods: IValues[] = this.GetFoodsFromCategory(category);
+    this.router.navigate(["food-list"], { state: {categoryName: category,values: foods} });
+    console.log("category-data: ", foods); //Debug
   }
 
   GetFoodsFromCategory(selectedCategory:string): IValues[] {
-    var foods : IValues[];
+    let foods : IValues[];
 
     this.inventories.forEach(inventory => {
       if(inventory.name == selectedCategory){
