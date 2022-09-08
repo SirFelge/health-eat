@@ -8,13 +8,18 @@ import { FoodDetailsPageRoutingModule } from './food-details-routing.module';
 
 import { FoodDetailsPage } from './food-details.page';
 
+import { SharedModulePageModule } from '../shared-module/shared-module.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FoodDetailsPageRoutingModule
+    FoodDetailsPageRoutingModule,
+    SharedModulePageModule
   ],
-  declarations: [FoodDetailsPage]
+  declarations: [
+    FoodDetailsPage
+  ]
 })
 export class FoodDetailsPageModule {}
