@@ -1,34 +1,39 @@
 [
   {
     "name": "Fruits",
-    "iconPath": "./assets/img/fruit3.png",
+    "iconPath": "./assets/img/menu/fruit3.png",
     "values": [
       {
         "name": "Pear",
+        "iconPath": "./assets/img/fruit/birne.png",
         "healthy": 70,
         "energy": 40,
         "macros": 35
       },
       {
         "name": "Pineapple",
+        "iconPath": "./assets/img/fruit/ananas.png",
         "healthy": 85,
         "energy": 45,
         "macros": 25
       },
       {
         "name": "Banana",
+        "iconPath": "./assets/img/fruit/banana.png",
         "healthy": 80,
         "energy": 75,
         "macros": 40
       },
       {
         "name": "Mango",
+        "iconPath": "./assets/img/fruit/mango.png",
         "healthy": 85,
         "energy": 45,
         "macros": 35
       },
       {
         "name": "Orange",
+        "iconPath": "./assets/img/fruit/orange.png",
         "healthy": 85,
         "energy": 45,
         "macros": 30
@@ -37,28 +42,32 @@
   },
   {
     "name": "Vegetables",
-    "iconPath": "./assets/img/vegetables.png",
+    "iconPath": "./assets/img/menu/vegetables.png",
     "values": [
       {
         "name": "Salad",
+        "iconPath": "./assets/img/vegetable/kohl.png",
         "healthy": 80,
         "energy": 35,
         "macros": 25
       },
       {
         "name": "Cucumber",
+        "iconPath": "./assets/img/vegetable/gurke.png",
         "healthy": 90,
         "energy": 20,
         "macros": 25
       },
       {
         "name": "Potato",
+        "iconPath": "./assets/img/vegetable/potato.png",
         "healthy": 85,
         "energy": 75,
         "macros": 40
       },
       {
         "name": "Carrot",
+        "iconPath": "./assets/img/vegetable/carrot.png",
         "healthy": 85,
         "energy": 40,
         "macros": 35
@@ -67,22 +76,25 @@
   },
   {
     "name" : "Dishes",
-    "iconPath": "./assets/img/dish.png",
+    "iconPath": "./assets/img/menu/dish.png",
     "values": [
       {
         "name": "Pizza",
+        "iconPath": "./assets/img/dish/pizza.png",
         "healthy": 35,
         "energy": 60,
         "macros": 65
       },
       {
         "name": "Burger",
+        "iconPath": "./assets/img/dish/burger.png",
         "healthy": 45,
         "energy": 75,
         "macros": 70
       },
       {
         "name": "Spaghetti Bolognese",
+        "iconPath": "./assets/img/dish/spaguetti.png",
         "healthy": 50,
         "energy": 65,
         "macros": 70
