@@ -18,6 +18,19 @@ export class FoodListingComponent implements OnInit {
   }
 
   goToPage(food:string){
-    this.router.navigate([this.detailPage], { state: {values: this.foods} });
+    let selectedFood = this.getFoodFromFoods(food);
+    this.router.navigate([this.detailPage], { state: {selectedValue: selectedFood} });
+  }
+
+  getFoodFromFoods(selectedFood:string): IValues {
+    let food : IValues;
+
+    this.foods.forEach(possibleFood => {
+      if(possibleFood.name == selectedFood){
+        food = possibleFood;
+      }
+    });
+
+    return food;
   }
 }
