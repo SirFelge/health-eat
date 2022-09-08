@@ -13,11 +13,15 @@ const routes: Routes = [
   {
     path: 'main-menu',
     loadChildren: () => import('./main-menu/main-menu.module').then( m => m.MainMenuPageModule)
-  },  {
+  },
+  {
     path: 'shared-module',
     loadChildren: () => import('./shared-module/shared-module.module').then( m => m.SharedModulePageModule)
   },
-
+  {
+    path: 'food-details',
+    loadChildren: () => import('./food-details/food-details.module').then( m => m.FoodDetailsPageModule)
+  },
 ];
 
 @NgModule({
