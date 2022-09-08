@@ -1,0 +1,29 @@
+.centerImage {
+    text-align: center;
+}
+
+.food-icon {
+    width: 40%;
+}
+
+.progressionBarWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.progressionBar{
+    width: 70%;
+    border-radius: 5px;
+    background-color: white; 
+    position: relative;
+
+    div {
+        position: absolute;
+        background-color: green;
+        border-radius: 5px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+}
