@@ -15,7 +15,7 @@ export class NavButtonComponent implements OnInit {
   ngOnInit() {}
 
   goToPage(): void {
-    console.log(this.page);
+    console.log(this.page); //Debug
     this.router.navigate([this.page]);
   }
 }
