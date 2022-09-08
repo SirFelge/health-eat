@@ -11,6 +11,7 @@ import { SharedModulePage } from './shared-module.page';
 import { HeaderComponent } from '../components/header/header.component';
 import { CategoryItemComponent } from '../components/category-item/category-item.component';
 import { NavButtonComponent } from '../components/nav-button/nav-button.component';
+import { FoodListingComponent } from '../components/food-listing/food-listing.component';
 
 @NgModule({
   imports: [
@@ -23,12 +24,14 @@ import { NavButtonComponent } from '../components/nav-button/nav-button.componen
     SharedModulePage,
     HeaderComponent,
     CategoryItemComponent,
-    NavButtonComponent
+    NavButtonComponent,
+    FoodListingComponent
   ],
   exports: [
     HeaderComponent,
     CategoryItemComponent,
-    NavButtonComponent
+    NavButtonComponent,
+    FoodListingComponent
   ]
 })
 

@@ -1,0 +1,14 @@
+<ion-slides pager="true">
+  <ion-slide *ngFor="let food of foods">
+    <ion-card>
+      <button style="background-color: #e9bb3d;" (click)="goToPage(food.name)">
+        <ion-card-header>
+          <ion-card-title>{{food.name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <img class="food-icon" src="{{food.iconPath}}">
+        </ion-card-content>
+      </button>
+    </ion-card>
+  </ion-slide>
+</ion-slides>
