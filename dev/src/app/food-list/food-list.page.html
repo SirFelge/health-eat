@@ -1,8 +1,5 @@
 <ion-content>
-  <app-header></app-header>
-  <!-- food listing -->
-  <div *ngFor="let food of foods">
-    <p>{{food.name}}</p>
-  </div>
+  <app-header [title]="category"></app-header>
+  <app-food-listing [foods]="foods" detailPage="food-details"></app-food-listing>
   <app-nav-button page="main-menu"></app-nav-button>
 </ion-content>
