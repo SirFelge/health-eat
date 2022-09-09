@@ -19,7 +19,7 @@ export class FoodDetailsPage implements OnInit {
     this.energy = this.selectedFood.energy.toString() + "%";
     this.macros = this.selectedFood.macros.toString() + "%";
     
-    console.log(this.selectedFood);
+    console.log(this.selectedFood); //Debug
   }
 
   ngOnInit() {}
